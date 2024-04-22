@@ -1,0 +1,23 @@
+<h2>Paises</h2>
+<hr>
+<!-- <ul class="list-group">
+
+  <li class="list-group-item" routerLink="home" routerLinkActive="active">
+    Home Page
+  </li>
+
+  <li class="list-group-item" routerLink="about" routerLinkActive="active">
+    About Page
+  </li>
+  <li class="list-group-item" routerLink="contact" routerLinkActive="active">
+    Contact Page
+  </li>
+
+</ul> -->
+
+<ul class="list-group">
+  <li *ngFor="let nav of navLinks" class="list-group-item" routerLink='{{nav.route}}' routerLinkActive="active">
+    {{nav.tittle}}
+  </li>
+
+</ul>
